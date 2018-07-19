@@ -1,0 +1,23 @@
+name: starter_kit
+type: profile
+description: 'Starter Kit profile'
+core: 8.x
+
+dependencies:
+  - block
+  - config
+  - dynamic_page_cache
+  - help
+  - language
+  - page_cache
+  - toolbar
+  - user
+  - redis
+
+themes:
+  - seven
+
+config_install: true
+config:
+  system.site:
+    default_langcode: fr

@@ -1,0 +1,10 @@
+{
+    "name": "niji/starter_kit",
+    "description": "Starter kit profile",
+    "type": "drupal-profile",
+    "require": {
+        "drupal/core": "~8.0",
+        "drupal/config_split": "~1.0",
+        "drupal/redis": "~1.0"
+    }
+}
