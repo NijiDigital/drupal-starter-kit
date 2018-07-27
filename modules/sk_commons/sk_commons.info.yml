@@ -1,0 +1,6 @@
+name: 'Starter Kit commons'
+description: 'Define commons configurations'
+package: 'Starter Kit'
+
+type: module
+core: 8.x

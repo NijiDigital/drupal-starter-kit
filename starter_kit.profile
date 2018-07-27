@@ -2,7 +2,7 @@
 
 /**
  * @file
- * Install actions for the Niji profile.
+ * Install actions for the Starter Kit profile.
  */
 
 /**

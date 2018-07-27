@@ -1,0 +1,11 @@
+langcode: en
+status: true
+dependencies: {  }
+id: image_text
+label: 'Image + Text'
+icon_uuid: null
+description: 'Use <em>Image + Text</em> for adding an image with text.'
+behavior_plugins: {  }
+third_party_settings:
+  paragraphs_browser:
+    image_path: profiles/contrib/starter_kit/modules/sk_paragraph_text_image/img/image_text.png

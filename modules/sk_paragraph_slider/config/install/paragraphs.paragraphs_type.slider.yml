@@ -1,0 +1,11 @@
+langcode: en
+status: true
+dependencies: {  }
+id: slider
+label: Slider
+icon_uuid: null
+description: 'Use <em>Slider</em> for adding an image (with optional text and link) slide show.'
+behavior_plugins: {  }
+third_party_settings:
+  paragraphs_browser:
+    image_path: profiles/contrib/starter_kit/modules/sk_paragraph_slider/img/slider.png

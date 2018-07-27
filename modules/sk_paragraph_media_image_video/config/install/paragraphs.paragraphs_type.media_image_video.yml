@@ -1,0 +1,11 @@
+langcode: en
+status: true
+dependencies: {  }
+id: media_image_video
+label: 'Image or Video'
+icon_uuid: null
+description: 'Use <em>Image or Video</em> for adding an image or a video.'
+behavior_plugins: {  }
+third_party_settings:
+  paragraphs_browser:
+    image_path: profiles/contrib/starter_kit/modules/sk_paragraph_media_image_video/img/image_video.png

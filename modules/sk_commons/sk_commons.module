@@ -1,0 +1,31 @@
+<?php
+
+/**
+ * @file
+ * Starter Kit commons module file.
+ */
+
+use Drupal\Core\Form\FormStateInterface;
+
+/**
+ * Implements hook_form_alter().
+ *
+ * Alter entity browser form to unset all entity_form tabs that allow to create
+ * a media while the field settings target_bundle does not allow it.
+ */
+function sk_commons_form_alter(array &$form, FormStateInterface $form_state, $form_id) {
+  if ($form_id === 'entity_browser_media_browser_form') {
+    $browser = $form_state->getFormObject()->getEntityBrowser();
+    $entity_browser_settings = $form_state->get(['entity_browser']);
+    foreach ($form['widget_selector'] as $id => $tab) {
+      if (strpos($id, 'tab_selector') === 0) {
+        $browser_configuration = $browser->getWidget($tab['#widget_id'])->getConfiguration();
+        if ($browser_configuration['id'] === 'entity_form'
+          && isset($browser_configuration['settings'])
+          && !in_array($browser_configuration['settings']['bundle'], $entity_browser_settings['widget_context']['target_bundles'])) {
+          unset($form['widget_selector'][$id]);
+        }
+      }
+    }
+  }
+}

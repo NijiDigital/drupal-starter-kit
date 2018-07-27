@@ -1,0 +1,11 @@
+name: 'Media image'
+description: 'Define the image media bundle'
+package: 'Starter Kit'
+
+type: module
+core: 8.x
+
+dependencies:
+  - drupal:image
+  - drupal:media
+  - starter_kit:sk_commons

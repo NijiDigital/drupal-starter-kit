@@ -12,12 +12,9 @@ dependencies:
   - page_cache
   - toolbar
   - user
+  - config_split
   - redis
 
 themes:
+  - adminimal_theme
   - seven
-
-config_install: true
-config:
-  system.site:
-    default_langcode: fr

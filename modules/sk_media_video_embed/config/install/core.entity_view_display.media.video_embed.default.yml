@@ -1,0 +1,30 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.media.video_embed.field_video_embed
+    - image.style.thumbnail
+    - media.type.video_embed
+  module:
+    - video_embed_field
+id: media.video_embed.default
+targetEntityType: media
+bundle: video_embed
+mode: default
+content:
+  field_video_embed:
+    weight: 6
+    label: above
+    settings:
+      responsive: true
+      width: 854
+      height: 480
+      autoplay: true
+    third_party_settings: {  }
+    type: video_embed_field_video
+    region: content
+hidden:
+  created: true
+  name: true
+  thumbnail: true
+  uid: true
