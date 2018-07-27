@@ -1,0 +1,11 @@
+langcode: en
+status: true
+dependencies: {  }
+id: title_text
+label: 'Title + Text'
+icon_uuid: null
+description: 'Use <em>Title + Text</em> for adding a text with a title.'
+behavior_plugins: {  }
+third_party_settings:
+  paragraphs_browser:
+    image_path: profiles/contrib/starter_kit/modules/sk_paragraph_title_text/img/title_text.png

@@ -1,10 +1,35 @@
 {
     "name": "niji/starter_kit",
     "description": "Starter kit profile",
+    "extra": {
+        "patches": {
+            "drupal/entity_browser": {
+                "[2865928] The View widget should filter based on field settings": "https://www.drupal.org/files/issues/entity-browser-view-context-2865928-14.patch"
+            },
+            "drupal/paragraphs_browser": {
+                "[2923479] Paragraph field's \"exclude selected types\" option not taken into account": "https://www.drupal.org/files/issues/2923479-paragraphs_browser-exclude_option_ignored-2.patch"
+            }
+        }
+    },
     "type": "drupal-profile",
     "require": {
-        "drupal/core": "~8.0",
+        "cweagans/composer-patches": "~1.0",
+        "drupal/admin_toolbar": "~1.0",
+        "drupal/adminimal_admin_toolbar": "1.4",
+        "drupal/adminimal_theme": "1.3",
+        "drupal/core": "~8.5.5",
         "drupal/config_split": "~1.0",
-        "drupal/redis": "~1.0"
+        "drupal/entity_browser": "~2.0",
+        "drupal/inline_entity_form": "~1.0",
+        "drupal/paragraphs": "~1.0",
+        "drupal/paragraphs_browser": "~1.0",
+        "drupal/redis": "~1.0",
+        "drupal/video_embed_field": "^2.0"
+    },
+    "require-dev": {
+        "components/highlightjs": "9.7.*",
+        "d3/d3": "3.5.*",
+        "drupal/devel": "1.x-dev",
+        "drupal/vardumper": "^1.0"
     }
 }

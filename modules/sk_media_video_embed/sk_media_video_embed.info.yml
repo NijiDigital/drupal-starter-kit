@@ -1,0 +1,11 @@
+name: 'Media video embed'
+description: 'Define the video embed media bundle'
+package: 'Starter Kit'
+
+type: module
+core: 8.x
+
+dependencies:
+  - drupal:media
+  - video_embed_field:video_embed_media
+  - starter_kit:sk_commons

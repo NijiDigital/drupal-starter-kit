@@ -1,0 +1,13 @@
+name: 'Paragraphs media image video full screen'
+description: 'Define the paragraph media image video full screen'
+package: 'Starter Kit'
+
+type: module
+core: 8.x
+
+dependencies:
+  - entity_browser:entity_browser
+  - entity_browser_entity_form:entity_browser_entity_form
+  - starter_kit:sk_commons
+  - paragraphs:paragraphs
+  - drupal:views

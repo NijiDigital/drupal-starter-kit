@@ -1,0 +1,12 @@
+langcode: en
+status: true
+dependencies: {  }
+id: video_embed
+label: 'Video Embed'
+description: 'Use embed video for reusable media.'
+source: video_embed_field
+queue_thumbnail_downloads: false
+new_revision: false
+source_configuration:
+  source_field: field_video_embed
+field_map: {  }

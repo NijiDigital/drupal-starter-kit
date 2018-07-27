@@ -1,0 +1,11 @@
+name: 'Node page'
+description: 'Define the node page'
+package: 'Starter Kit'
+
+type: module
+core: 8.x
+
+dependencies:
+  - drupal:node
+  - starter_kit:sk_commons
+  - paragraphs_browser:paragraphs_browser

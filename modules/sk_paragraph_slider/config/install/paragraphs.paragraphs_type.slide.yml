@@ -1,0 +1,8 @@
+langcode: en
+status: true
+dependencies: {  }
+id: slide
+label: Slide
+icon_uuid: null
+description: 'Use <em>Slide</em> for adding a slide into a <em>Slider</em>.'
+behavior_plugins: {  }

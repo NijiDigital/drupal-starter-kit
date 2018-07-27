@@ -1,0 +1,15 @@
+name: 'Paragraphs slider'
+description: 'Define the paragraph slider'
+package: 'Starter Kit'
+
+type: module
+core: 8.x
+
+dependencies:
+  - drupal:text
+  - entity_browser:entity_browser
+  - entity_browser_entity_form:entity_browser_entity_form
+  - starter_kit:sk_commons
+  - starter_kit:sk_media_image
+  - paragraphs:paragraphs
+  - drupal:views
