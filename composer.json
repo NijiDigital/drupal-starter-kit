@@ -5,9 +5,6 @@
         "patches": {
             "drupal/entity_browser": {
                 "[2865928] The View widget should filter based on field settings": "https://www.drupal.org/files/issues/entity-browser-view-context-2865928-14.patch"
-            },
-            "drupal/paragraphs_browser": {
-                "[2923479] Paragraph field's \"exclude selected types\" option not taken into account": "https://www.drupal.org/files/issues/2923479-paragraphs_browser-exclude_option_ignored-2.patch"
             }
         }
     },
