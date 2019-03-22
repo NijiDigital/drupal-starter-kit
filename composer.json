@@ -1,13 +1,6 @@
 {
     "name": "niji/starter_kit",
     "description": "Starter kit profile",
-    "extra": {
-        "patches": {
-            "drupal/entity_browser": {
-                "[2865928] The View widget should filter based on field settings": "https://www.drupal.org/files/issues/entity-browser-view-context-2865928-14.patch"
-            }
-        }
-    },
     "type": "drupal-profile",
     "require": {
         "cweagans/composer-patches": "~1.0",
