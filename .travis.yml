@@ -1,0 +1,28 @@
+language: php
+
+php:
+  - 7.3
+  
+mysql: 
+  database: drupal 
+  username: root 
+  encoding: utf8
+  
+before_install: 
+  - sudo apt-get update
+  - composer self-update
+  - composer create-project drupal-composer/drupal-project:8.x-dev starter-kit --no-interaction
+  - cd starter-kit
+  - composer require niji/starter_kit
+  - ls -lha web/profiles/contrib/starter_kit/modules
+
+install: 
+  # Create MySQL Database
+  - mysql -e 'create database drupal;'
+
+  # Install drupal default profile
+  - vendor/bin/drush --verbose site-install starter_kit --db-url=mysql://root:@127.0.0.1/drupal --yes
+
+  # Install all starter_kit modules
+  - vendor/bin/drush --verbose en sk_commons sk_media_video_embed sk_paragraph_media_image_video sk_paragraph_title_text sk_media_file sk_media_video_file sk_paragraph_slider sk_media_image sk_node_page sk_paragraph_text_image --yes
+
