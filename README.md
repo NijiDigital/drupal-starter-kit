@@ -1,3 +1,5 @@
+[![Build Status](https://travis-ci.org/NijiDigital/drupal-starter-kit.svg?branch=master)](https://travis-ci.org/NijiDigital/drupal-starter-kit)
+
 # Distribution Starter Kit
 
 **Attention : Ce profile n'installe aucun des modules qu'il contient. Seuls les modules de base du coeur et certains modules contrib sont installés par défaut.**
