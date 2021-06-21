@@ -4,6 +4,7 @@ package: 'Starter Kit'
 
 type: module
 core: 8.x
+core_version_requirement: ^8 || ^9
 
 dependencies:
   - entity_browser:entity_browser
