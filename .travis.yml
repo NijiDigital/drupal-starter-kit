@@ -1,14 +1,11 @@
 language: php
 
-
 php:
   - 7.3
-  
-mysql: 
-  database: drupal 
-  username: root 
-  encoding: utf8
-  
+
+services:
+  - mysql
+
 before_install: 
   - sudo apt-get update
   - composer self-update
